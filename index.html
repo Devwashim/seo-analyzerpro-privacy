@@ -1,32 +1,300 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Privacy Policy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SEO Analyzer Pro - Privacy Policy</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#0f172a;
+      color:#f8fafc;
+      overflow-x:hidden;
+      position:relative;
+    }
+
+    /* Animated Background */
+
+    body::before{
+      content:'';
+      position:fixed;
+      width:500px;
+      height:500px;
+      background:linear-gradient(135deg,#3b82f6,#06b6d4);
+      filter:blur(120px);
+      top:-150px;
+      right:-150px;
+      opacity:.35;
+      animation:float 8s ease-in-out infinite;
+      z-index:-1;
+    }
+
+    body::after{
+      content:'';
+      position:fixed;
+      width:400px;
+      height:400px;
+      background:linear-gradient(135deg,#8b5cf6,#ec4899);
+      filter:blur(120px);
+      bottom:-150px;
+      left:-150px;
+      opacity:.25;
+      animation:float2 10s ease-in-out infinite;
+      z-index:-1;
+    }
+
+    @keyframes float{
+      0%{transform:translateY(0px);}
+      50%{transform:translateY(25px);}
+      100%{transform:translateY(0px);}
+    }
+
+    @keyframes float2{
+      0%{transform:translateY(0px);}
+      50%{transform:translateY(-25px);}
+      100%{transform:translateY(0px);}
+    }
+
+    .container{
+      max-width:950px;
+      margin:auto;
+      padding:60px 25px;
+    }
+
+    .card{
+      background:rgba(15,23,42,.75);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:28px;
+      padding:50px;
+      backdrop-filter:blur(18px);
+      box-shadow:
+      0 0 40px rgba(59,130,246,.12),
+      0 0 90px rgba(168,85,247,.08);
+      animation:fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    .logo{
+      width:80px;
+      height:80px;
+      border-radius:24px;
+      background:linear-gradient(135deg,#3b82f6,#06b6d4);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:34px;
+      margin-bottom:25px;
+      box-shadow:0 10px 30px rgba(59,130,246,.4);
+    }
+
+    h1{
+      font-size:42px;
+      font-weight:700;
+      margin-bottom:15px;
+      background:linear-gradient(to right,#60a5fa,#c084fc);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .subtitle{
+      color:#94a3b8;
+      font-size:16px;
+      margin-bottom:40px;
+      line-height:1.8;
+    }
+
+    .section{
+      margin-bottom:40px;
+      padding:30px;
+      border-radius:22px;
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.05);
+      transition:.35s ease;
+    }
+
+    .section:hover{
+      transform:translateY(-5px);
+      border-color:rgba(96,165,250,.35);
+      box-shadow:0 12px 40px rgba(59,130,246,.08);
+    }
+
+    h2{
+      font-size:24px;
+      margin-bottom:18px;
+      color:#ffffff;
+    }
+
+    p{
+      color:#cbd5e1;
+      line-height:1.9;
+      font-size:15px;
+    }
+
+    ul{
+      margin-top:15px;
+      padding-left:20px;
+    }
+
+    li{
+      margin-bottom:12px;
+      color:#cbd5e1;
+      line-height:1.8;
+    }
+
+    .badge{
+      display:inline-block;
+      padding:10px 18px;
+      background:linear-gradient(135deg,#2563eb,#7c3aed);
+      border-radius:999px;
+      font-size:13px;
+      font-weight:600;
+      margin-bottom:20px;
+      box-shadow:0 5px 20px rgba(59,130,246,.35);
+    }
+
+    .email-box{
+      margin-top:18px;
+      display:inline-block;
+      padding:14px 22px;
+      background:rgba(59,130,246,.12);
+      border:1px solid rgba(96,165,250,.3);
+      border-radius:14px;
+      color:#93c5fd;
+      text-decoration:none;
+      transition:.3s ease;
+    }
+
+    .email-box:hover{
+      background:rgba(59,130,246,.22);
+      transform:scale(1.03);
+    }
+
+    footer{
+      margin-top:40px;
+      text-align:center;
+      color:#64748b;
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+
+      .card{
+        padding:30px;
+      }
+
+      h1{
+        font-size:32px;
+      }
+
+      .section{
+        padding:22px;
+      }
+
+    }
+
+  </style>
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
+  <div class="container">
 
-<p>SEO Analyzer Pro respects your privacy.</p>
+    <div class="card">
 
-<h2>Information We Collect</h2>
-<ul>
-  <li>Google account email</li>
-  <li>Basic profile information</li>
-  <li>User feedback messages</li>
-</ul>
+      <div class="badge">
+        SEO Analyzer Pro
+      </div>
 
-<h2>How We Use Information</h2>
-<ul>
-  <li>User authentication</li>
-  <li>Improve extension features</li>
-  <li>Customer support</li>
-</ul>
+      <div class="logo">
+        🚀
+      </div>
 
-<p>We do not sell user data.</p>
+      <h1>Privacy Policy</h1>
 
-<h2>Contact</h2>
-<p>washimakarm1@gmail.com</p>
+      <p class="subtitle">
+        Your privacy matters to us. SEO Analyzer Pro is committed to protecting your personal information and maintaining transparency about how data is collected and used.
+      </p>
+
+      <div class="section">
+        <h2>Information We Collect</h2>
+
+        <p>
+          To improve user experience and provide secure authentication, we may collect limited information such as:
+        </p>
+
+        <ul>
+          <li>Google account email address</li>
+          <li>Basic public profile information</li>
+          <li>User-submitted feedback and support messages</li>
+          <li>Extension usage and diagnostic data</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>How We Use Your Information</h2>
+
+        <ul>
+          <li>Authenticate and identify users securely</li>
+          <li>Improve SEO analysis features and extension performance</li>
+          <li>Provide customer support and respond to feedback</li>
+          <li>Prevent abuse, spam, and unauthorized usage</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Data Protection</h2>
+
+        <p>
+          We do not sell, rent, or share your personal information with third parties for marketing purposes. Your information is processed securely and used only for functionality related to SEO Analyzer Pro.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Google Authentication</h2>
+
+        <p>
+          SEO Analyzer Pro uses Google OAuth authentication to securely sign users into the extension. Authentication is handled directly through Google's secure systems.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Contact</h2>
+
+        <p>
+          If you have any questions, support requests, or feedback regarding this Privacy Policy, please contact:
+        </p>
+
+        <a class="email-box" href="mailto:washimakarm1@gmail.com">
+          washimakarm1@gmail.com
+        </a>
+      </div>
+
+      <footer>
+        © 2026 SEO Analyzer Pro • All Rights Reserved
+      </footer>
+
+    </div>
+
+  </div>
 
 </body>
 </html>
